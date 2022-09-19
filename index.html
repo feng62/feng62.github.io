@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+	#sex span{
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: aqua;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+#sex{
+	width: 200px;
+	height: 200px;
+	margin: 200px auto;
+	animation: rotate 5s infinite;
+	transform-style: preserve-3d;
+	animation-timing-function: inherit;
+}
+#sex img{
+	width: 100%;
+	height: 100%;
+}
+#sex div{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	background-color: red;
+}
+#in-a{
+	transform: translateZ(50PX);
+}
+#in-b{
+	transform: translateZ(-50px);
+}
+#in-c{
+	transform: rotateX(90deg) translateZ(50PX);
+}
+#in-d{
+	transform: rotateX(-90deg) translateZ(50PX);
+}
+#in-e{
+	transform: rotateY(90deg) translateZ(50PX);
+}
+#in-f{
+	transform: rotateY(-90deg) translateZ(50PX);
+}
+#out-a{
+	transform: translateZ(100PX);
+}
+#out-b{
+	transform: translateZ(-100px);
+}
+#out-c{
+	transform: rotateX(90deg) translateZ(100PX);
+}
+#out-d{
+	transform: rotateX(-90deg) translateZ(100PX);
+}
+#out-e{
+	transform: rotateY(90deg) translateZ(100PX);
+}
+#out-f{
+	transform: rotateY(-90deg) translateZ(100PX);
+}
+#sex:hover #out-a{
+	transform: translateZ(150PX);
+}
+#sex:hover #out-b{
+	transform: translateZ(-150PX);
+}
+#sex:hover #out-c{
+	transform: rotateX(90deg) translateZ(150PX);
+}
+#sex:hover #out-d{
+	transform: rotateX(-90deg) translateZ(150PX);
+}
+#sex:hover #out-e{
+	transform: rotateY(90deg) translateZ(150PX);
+}
+#sex:hover #out-f{
+	transform: rotateY(-90deg) translateZ(150PX);
+}
+
+
+@keyframes rotate{
+	from{
+		transform: rotateX(0deg)rotateY(0deg);
+	}
+	to{
+		transform: rotateX(360deg)rotateY(360deg);
+	}
+}
+
+
+	</style>
+	<body>
+		<div id="sex">
+			<span id="in-a"><img src="2.jpg"></span>
+			<span id="in-b"><img src="2.jpg"></span>
+			<span id="in-c"><img src="2.jpg"></span>
+			<span id="in-d"><img src="2.jpg"></span>
+			<span id="in-e"><img src="2.jpg"></span>
+			<span id="in-f"><img src="2.jpg"></span>
+		<div id="out-a"><img src="1.jpg"></div>
+		<div id="out-b"><img src="1.jpg"></div>
+		<div id="out-c"><img src="1.jpg"></div>
+		<div id="out-d"><img src="1.jpg"></div>
+		<div id="out-e"><img src="1.jpg"></div>
+		<div id="out-f"><img src="1.jpg"></div>
+		</div>   
+	
+	</body1
+</html>
